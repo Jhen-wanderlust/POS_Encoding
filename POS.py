@@ -10,8 +10,6 @@ import time
 
 
 
-
-
 chrome_options = Options()
 chrome_options.add_argument("nwapp=C:/Users/Me/Documents/POS_OTC/win64/win64/TITANS_KRAKEN.exe")
 driver = webdriver.Chrome("C:/Users/Me/Desktop/POS_Encoding/nwjs-sdk-v0.62.0-win-x64/nwjs-sdk-v0.62.0-win-x64/chromedriver",options=chrome_options)
@@ -22,8 +20,6 @@ driver.implicitly_wait(val)
 
 for f in range(len(header.Cashier_username)):
   
- 
-
  time.sleep(3)
  # LOGIN (DOUBLE CHECK YUNG USER/CASHIER)
  driver.find_element_by_xpath("/html/body/ion-app/ion-modal/div/page-setup/ion-content/div[2]/form/ion-card/ion-grid/ion-row[3]/ion-col/ion-item/div[1]/div/ion-input/input").send_keys(Keys.BACKSPACE)
